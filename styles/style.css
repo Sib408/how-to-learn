@@ -187,7 +187,7 @@
   position: relative;
   height: 890px;
   padding-top: 100px;
-  background-color:#f2f2f2 ;
+  background-color:#f2f2f2;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -339,7 +339,7 @@
 }
 
 .footer__social-icon-vk {
-  background-image: url("../images/vk_color_white.svg")
+  background-image: url("../images/vk_color_white.svg");
 }
 
 .footer__social-icon-instagram {
