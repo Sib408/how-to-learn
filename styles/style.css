@@ -1,11 +1,4 @@
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url(../font/HelveticaNeueCyr-Roman.woff2) format('woff2'),
-      url(../font/HelveticaNeueCyr-Roman.woff) format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 .page {
   min-width: 1100px;
@@ -53,7 +46,7 @@
   z-index: 2;
 }
 
-.header__sudtittle{
+.header__subtitle{
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -140,7 +133,7 @@
 }
 
 .section-subtitle {
-  width: 60%;
+  max-width: 60%;
   margin: 0 auto;
   padding: 0;
   font-size: 24px;
@@ -185,13 +178,14 @@
 
 .feyman {
   position: relative;
-  height: 890px;
+  min-height: 890px;
   padding-top: 100px;
   background-color:#f2f2f2;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 867px 637px;
+  box-sizing: border-box;
 }
 
 .feyman__title {
@@ -262,6 +256,7 @@
 }
 
 .footer {
+  display: flex;
   min-height: 350px;
   padding: 60px 0 40px;
   background-color:  #1f1f1f;
@@ -289,30 +284,21 @@
 
 .footer__author {
   padding: 18px 0;
+  margin: 0;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
 }
 
-.footer__column_content_info {
-  padding-bottom: 16px;
-}
-
 .footer__column-links {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
-  margin: 0;
+  padding: 20px 0 16px;
 }
 
 .footer__column-heading {
   margin: 0;
-  padding-bottom: 20px;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
@@ -327,21 +313,8 @@
 }
 
 .footer__social-icon {
- background-size: 16px 16px;
- background-repeat: no-repeat;
- background-position: left;
- padding-left: 26px;
-
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
 }
 
-.footer__social-icon-facebook {
-  background-image: url("../images/facebook_color_white.svg");
-}
-
-.footer__social-icon-vk {
-  background-image: url("../images/vk_color_white.svg");
-}
-
-.footer__social-icon-instagram {
-  background-image: url("../images/instagram_color_white.svg");
-}
